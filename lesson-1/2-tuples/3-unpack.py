@@ -9,3 +9,5 @@ persons = [person, person, person]
 for name, age, profession in persons:
     print(f"Name: {name}, Age: {age}, Profession: {profession}")
 
+name, *age = person
+print(age)

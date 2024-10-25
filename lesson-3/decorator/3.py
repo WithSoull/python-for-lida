@@ -8,5 +8,10 @@ def log_decorator(func):
 def multiply(a, b):
     return a * b
 
-print(multiply(4, 5))
+@log_decorator
+def sum3(a, b, c):
+    return a + b + c
 
+
+print(multiply(4, 5))
+print(sum3(2, 3, c=4))
